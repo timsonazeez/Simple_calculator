@@ -38,7 +38,7 @@ while True:
 
     elif operation == "/":
         try:
-            Division = int(First_Number) / int(Second_Number)
+            Division = round(int(First_Number) / int(Second_Number), 4) # The division is meant to round up value to four decimal places
         except ZeroDivisionError:
             print("You can't divide by zero.")
         except ValueError:
